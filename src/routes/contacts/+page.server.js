@@ -7,6 +7,13 @@ let contacts = [
     email: 'saul@example.com',
     company: 'Saul Goodman & Associates',
     job: 'Attorney'
+  }, 
+   {
+    id: 'de393e6a-1c08-4e6e-9aad-0994fcf0d981',
+    name: 'Pablo Goodman',
+    email: 'saul@example.com',
+    company: 'Saul Goodman & Associates',
+    job: 'Attorney'
   }
 ]
 
@@ -30,6 +37,17 @@ export const actions = {
       return invalid(400, {
         error: true,
         message: 'Name must be at least two characters.',
+        name,
+        email,
+        company,
+        job
+      })
+    } 
+
+     if (email.length < 5) {
+      return invalid(400, {
+        error: true,
+        message: 'email must be at least five characters.',
         name,
         email,
         company,

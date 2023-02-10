@@ -55,7 +55,7 @@
 			{/each}
 		</tbody>
 		<!-- foot -->
-		<tfoot>
+		<!-- <tfoot>
 			<tr>
 				<th />
 				<th>Name</th>
@@ -63,6 +63,6 @@
 				<th>Email</th>
 				<th />
 			</tr>
-		</tfoot>
+		</tfoot> -->
 	</table>
 </div>

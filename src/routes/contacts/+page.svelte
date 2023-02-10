@@ -4,7 +4,8 @@
 	import Alert from '../../lib/components/Alert.svelte';
 
 	export let data;
-	export let form;
+	export let form; 
+	$: console.log(data, 'data from contacts page')
 </script>
 
 <div class="w-full">
